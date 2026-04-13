@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "English to Darija Translator",
+  "version": "1.0.0",
+  "description": "Translate English text to Moroccan Arabic Dialect (Darija) using Gemini AI",
+  "permissions": [
+    "contextMenus",
+    "sidePanel",
+    "storage",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "English to Darija Translator",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

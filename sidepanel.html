@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English to Darija Translator</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TO Darija</h1>
+      <p class="subtitle">Moroccan Arabic Dialect Translator</p>
+    </header>
+
+    <div class="api-key-section" id="apiKeySection">
+      <div class="api-key-warning">
+        <span class="warning-icon">⚠️</span>
+        <span>API Key not configured</span>
+      </div>
+      <button id="configureApiBtn" class="btn btn-secondary">Configure API Key</button>
+    </div>
+
+    <div class="translation-section">
+      <div class="input-group">
+        <label for="sourceText">Enter the Text</label>
+        <textarea
+          id="sourceText"
+          placeholder="Select text on the webpage or type here..."
+          rows="5"
+        ></textarea>
+        <div class="char-count">
+          <span id="charCount">0</span> characters
+        </div>
+      </div>
+
+      <button id="translateBtn" class="btn btn-primary">
+        <span class="btn-text">Translate to Darija</span>
+        <span class="btn-loading" style="display: none;">
+          <span class="spinner"></span> Translating...
+        </span>
+      </button>
+
+      <div class="output-group">
+        <label for="translatedText">Darija Translation</label>
+        <div class="output-container">
+          <textarea
+            id="translatedText"
+            placeholder="Translation will appear here..."
+            rows="5"
+            readonly
+          ></textarea>
+          <button id="copyBtn" class="copy-btn" title="Copy to clipboard">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="error-message" id="errorMessage" style="display: none;">
+      <span class="error-icon">❌</span>
+      <span id="errorText"></span>
+    </div>
+
+    <footer>
+      <p>Powered by OpenRouter</p>
+    </footer>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
