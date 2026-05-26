@@ -1,4 +1,5 @@
-<img width="633" height="884" alt="Capture d&#39;écran 2026-05-26 165740" src="https://github.com/user-attachments/assets/1640e006-e7f8-43a6-bb48-bb7541accb08" />
+<img width="565" height="882" alt="Capture d&#39;écran 2026-03-30 123818" src="https://github.com/user-attachments/assets/e999b5b2-b2e6-4572-9c8d-29ad9d0b650e" />
+
 # Darija Translator Extension
 
 Une extension Chrome permettant de traduire rapidement du texte en **darija marocaine** grâce à des APIs d’intelligence artificielle comme OpenAI, Claude ou Gemini.
